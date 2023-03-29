@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-bubble-to-br {
+  animation: animation-bubble-to-bottom-right 5s ease-in-out infinite alternate;
+}
+
+.animate-bubble-to-r {
+  animation: animation-bubble-to-right 5s ease-in-out infinite alternate;
+}
+.animate-bubble-to-b {
+  animation: animation-bubble-to-bottom 5s ease-in-out infinite alternate;
+}
+
+.animate-bubble-to-hug {
+  animation: animation-bubble-to-hug 5s ease-in-out infinite alternate;
+}
+
+@keyframes animation-bubble-to-bottom-right {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(20px, 30px);
+  }
+}
+@keyframes animation-bubble-to-right {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(20px, 0px);
+  }
+}
+@keyframes animation-bubble-to-hug {
+  0% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(110%);
+  }
+}
+@keyframes animation-bubble-to-bottom {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 30px);
+  }
+}
+
+
